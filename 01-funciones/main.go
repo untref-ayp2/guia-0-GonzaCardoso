@@ -5,14 +5,17 @@ import (
 )
 
 func main() {
-	var funcion []float32 = []float32{3.43, -4.00, -0.52, 0.00, 0.03, 1.50}
+	var funcion []float32 = []float32{-0.0, -4.00, -0.52, 0.00, 0.03, 1.50}
 	var i int = 0
-	fmt.Print(funcion[0])
+	if funcion[0] != 0.0 {
+		fmt.Print(funcion[0])
+	}
+
 	for i < len(funcion)-1 {
 		if funcion[i+1] < 0.0 {
 			fmt.Print(" ", funcion[i+1], "*x^", i+1)
 			i++
-		} else if funcion[1+1] == 0.0 {
+		} else if funcion[i+1] == 0.0 {
 			i++
 		} else {
 			fmt.Print(" +", funcion[i+1], "*x^", i+1)
