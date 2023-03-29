@@ -1,3 +1,6 @@
 go 1.20
 
-use ./01-funciones
+use (
+	./01-funciones
+	./03-mayorOMenor
+)
