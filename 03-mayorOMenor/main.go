@@ -6,8 +6,8 @@ import (
 
 func main() {
 	var lista []int = []int{-700, -4, -4, -23, -59, -5, -6}
-	fmt.Print("mayor = ", elMayor(lista), " ")
-	fmt.Print("menor = ", elMenor(lista))
+	fmt.Println("mayor =", elMayor(lista))
+	fmt.Println("menor =", elMenor(lista))
 
 }
 
